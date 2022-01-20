@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @fredgbcn
 - 👀 I’m interested in coding, translating French =>Spanish, Spanish => French
-- 🌱 I’m currently learning node.js, php, sass, javascipt...
+- 🌱 I’m currently learning node.js, php, sass, javascipt, REACT, Vue.js...
 - 💞️ I’m looking to collaborate on any project
 - 📫 How to reach me fgaufichon@hotmail.fr
 
