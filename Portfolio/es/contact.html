@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/style.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Frédéric GAUFICHON</title>
+</head>
+<body class="body_home">
+    <div id="open" class="container">
+    <a href="#" @click="activate()" :class="[open === true ? 'a_open' : 'a_closed']"><span :class="[open === true ? 'burger_open' : 'burger_closed']"  id="burger"></span></a>
+    
+    <nav :class="[open === true ? 'nav_open' : 'nav_closed']" id="nav_mobile">
+        <ul>
+            <a href="./index.html" ><li class="home_menu"></li></a>
+            <li><a href="./competences.html">COMPETENCIAS</a></li>
+            <li><a href="./formation.html">FORMACIÓN</a></li>
+            <li><a href="./experience.html">EXPERIENCIA</a></li>
+            <li><a href="./contact.html">CONTACTO</a></li>
+            <li><a href="http://fredgbcn.com">FR / ES </a></li>
+            
+        </ul>
+    </nav>
+
+    <nav id="nav_desktop">
+        <ul>
+            <a href="./index.html" ><li class="home_menu"></li></a>
+            <li><a href="./competences.html">COMPETENCIAS</a></li>
+            <li><a href="./formation.html">FORMACIÓN</a></li>
+            <li><a href="./experience.html">EXPERIENCIA</a></li>
+            <li><a href="./contact.html">CONTACTO</a></li>
+            <li><a href="http://fredgbcn.com">FR / ES </a></li>
+            
+        </ul>
+    </nav>
+    <div class="half_body_desktop">
+    <h2 class="competences_h2">CONTACTO</h2>
+    <div class="competences_body">
+        <div class="container_contact">
+            <h4>Si desea más información no dude en contactarme por email.</h4>
+            <p>Para una entrevista en presencia, mi lugar de residencia actual es Estrasburgo, pero puedo desplazarme sin problema.</p>
+        </div>
+    </div>
+    </div>
+    <footer class="footer_contact">
+        <h2>Frédéric GAUFICHON</h2>
+        <div class="footer_text_linkedin">
+            <div class="text_footer">
+                <p>fgaufichon@hotmail.fr</p>
+                <p>Tel. +33(0)7 88762985</p>
+            </div>
+            <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-gaufichon-82080891/"><img src="../public/images/Linkedin_icon.svg" class="linkedin" alt="linkedin"></a>
+        </div>
+    </footer>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./app.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: "#open",
+            data: {
+                open: false,
+                year: 1
+            },
+            methods: {
+                activate() {
+                    
+                    this.open === true ? this.open = false : this.open = true;
+                },
+                addYear(){
+                   this.year < 5 && this.year > 0 ? this.year ++ : this.year == this.year;
+                },
+                substractYear(){
+                    this.year < 6 && this.year > 1 ? this.year -- : this.year == this.year;
+                }
+            }
+        });
+        </script>
+    
+</body>
+</html>
