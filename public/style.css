@@ -337,7 +337,7 @@ footer h2{
     list-style: inside;
 
 }
-.projet1, .projet2, .projet3{
+.projet1, .projet2, .projet3, .projet4, .projet5{
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -348,6 +348,7 @@ footer h2{
     padding: 10px;
     margin-top: 30px;
 }
+
 .africa{
     background-image: url('./images/africa.jpg');
 
@@ -358,6 +359,14 @@ footer h2{
 }
 .tcloc{
     background-image: url('./images/tcloc.jpg');
+
+}
+.flags{
+    background-image: url('./images/Flags.jpg');
+
+}
+.quiz{
+    background-image: url('./images/tn_Screenshot_3.jpg');
 
 }
 .projets a div{
@@ -499,9 +508,8 @@ footer h2{
   }
 
 @media screen and (min-width: 890px) {
-    .projet1, .projet2, .projet3{
+    .projet1, .projet2, .projet3, .projet4, .projet5{
         flex-direction: row;
-
     }
     .projet_txt h3{
         margin-left: 30px;
